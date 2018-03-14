@@ -1,0 +1,16 @@
+#loginForm{
+    display: none;
+    margin-bottom: 10px;
+    background-color: aquamarine;
+    padding: 20px;
+    height: 60px;
+    border-radius: 5px;
+}
+#registerForm{
+    display: none;
+    margin-bottom: 10px;
+    background-color: aquamarine;
+    padding: 20px;
+    height: 60px;
+    border-radius: 5px;
+}

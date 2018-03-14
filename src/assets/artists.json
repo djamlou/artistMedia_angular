@@ -1,0 +1,18 @@
+[
+    {
+        "id":1,
+        "name":"Cabrel",
+        "img":"assets/cabrel.jpg"
+    },
+    {
+        "id":2,
+        "name":"Dassin",
+        "img":"assets/dassin.jpg"
+    },
+    {
+        "id":3,
+        "name":"REM",
+        "img":"assets/rem.jpg"
+    }
+
+]

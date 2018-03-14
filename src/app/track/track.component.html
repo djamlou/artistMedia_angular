@@ -1,0 +1,7 @@
+<h1>Détail morceau : {{  track.title }} </h1>
+ Durée :<strong>{{  track.duration.timestamp | duration }}</strong>
+
+<h2>Les paroles du morceau : </h2>
+<textarea class="form-control" rows="15">
+{{ track.lyrics}}
+</textarea>

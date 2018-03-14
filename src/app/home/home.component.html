@@ -1,0 +1,25 @@
+
+
+<h1 class="text-center"> List of Artists</h1>
+<hr>
+<br>
+<ul>
+  <div class="row" *ngFor="let artist of artists">
+    <div class="col-md-3">
+      <img src="{{ artist.img }}" width="80" height="60">
+    </div>
+    <div class="col-md-4">
+      <li>
+        <strong>{{artist.name}}</strong><br>
+        Nombre d'album en base: <strong>{{ artist.albums.length }}</strong>
+      </li>
+    </div>
+    <div class="col-md-4">
+      <a class="btn btn-info" routerLink="/artist/{{artist.id}}">Détail</a>
+      <a class="btn btn-success" href="">Modifier</a>
+      <a class="btn btn-danger">Supprimer</a>
+    </div>
+
+  </div>
+
+</ul>

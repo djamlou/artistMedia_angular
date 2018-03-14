@@ -1,0 +1,19 @@
+
+<div *ngIf="album !== null">
+<h1>Fiche album :  {{ album.title }} </h1>
+Sortie en :<strong>{{ album.releaseDate }}</strong>
+<hr>
+
+<h2>Tracks :</h2>
+    <div class="row"  *ngFor="let track of tracks">
+        <div class="col-md-3"><img src="http://placehold.it/100/b22222/"></div>
+        <div class="col-md-7">
+
+            <h2><strong>{{ track.number}}</strong>- {{ track.title }}</h2>
+            Durée : <strong>{{ track.duration.timestamp | duration }}</strong>
+        </div>
+        <div class="col-md-2">
+            <a class="btn btn-primary"  routerLink="/track/{{track.id}}">Détail</a>
+        </div>
+    </div>
+</div>
