@@ -14,3 +14,15 @@
     height: 60px;
     border-radius: 5px;
 }
+
+#ajoutModifArtist{
+    display: none;
+    margin-bottom: 10px;
+    background-color: aquamarine;
+    padding: 20px;
+    height: 600px;
+}
+
+.genres{
+    height: 150px;
+}

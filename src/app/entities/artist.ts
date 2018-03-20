@@ -7,4 +7,5 @@ export class Artist {
     public img:string;
     public genres:any[];
     public albums?:Album[];
+    public imgData?:string;
 }

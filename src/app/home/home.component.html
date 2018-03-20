@@ -1,5 +1,6 @@
 
 
+<div id="listArtists">
 <h1 class="text-center"> List of Artists</h1>
 <hr>
 <br>
@@ -16,10 +17,12 @@
     </div>
     <div class="col-md-4">
       <a class="btn btn-info" routerLink="/artist/{{artist.id}}">Détail</a>
-      <a class="btn btn-success" href="">Modifier</a>
-      <a class="btn btn-danger">Supprimer</a>
+      
+      <a class="btn btn-success">Modifier</a>
+      <a class="btn btn-danger" (click)="deleteArtist(artist)">Supprimer</a>
     </div>
 
   </div>
 
 </ul>
+</div>

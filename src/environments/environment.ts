@@ -5,5 +5,5 @@
 
 export const environment = {
   production: false,
-  remote_uri: "localhost/symfonyCRUD/public/"
+  remote_uri: "http://localhost/symfonyCRUD/public/"
 };

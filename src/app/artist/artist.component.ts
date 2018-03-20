@@ -37,6 +37,13 @@ export class ArtistComponent implements OnInit {
 
         this.artist = p_artist;
 
+        this._service.deleteArtist(p_artist).then(         
+            (p_artist: Artist)=>{
+              this.artist = p_artist;
+
+            }
+        )
+
         this._albumService.getAlbumsByArtistId(p_artist.id).then(
           (albums:Album[]) => {
             console.log(albums, p_artist.id);

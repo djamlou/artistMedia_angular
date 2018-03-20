@@ -10,7 +10,7 @@ import {ArtistService} from '../artist.service';
 })
 export class HomeComponent implements OnInit {
 
-  artists: Array<Artist>
+  artists: Array<Artist>;
 
 private _service:ArtistService;
 
@@ -23,6 +23,14 @@ constructor(p_service:ArtistService){
 
 }
 
+public deleteArtist(artist:Artist):void{
+  this._service.deleteArtist(artist).then(
+    () => {
+      this.ngOnInit();
+    }
+  );
+}
+
 public ngOnInit():void{
     let artPromise : Promise<Artist[]> =  this._service.getAll();
     
@@ -30,5 +38,7 @@ public ngOnInit():void{
       (p_artists:Artist[])=>{
         this.artists = p_artists ;
       });
-    }
+
+  }
+   
 }

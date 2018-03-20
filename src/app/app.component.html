@@ -28,7 +28,7 @@
           </a>
           <ul class="dropdown-menu">
             <li>
-              <a href="#">Ajouter un artiste</a>
+              <a (click)="addForm()">Ajouter un artiste</a>
             </li>
             <li>
               <a href="">Ajouter un album</a>
@@ -87,7 +87,24 @@
         </div>
     </div>
   </div>
-  <div>
+
+  <div id="ajoutModifArtist">
+
+      <div class="row">
+        <div class=" col-md-8 col-md-offset-2 ">
+            <input  class="form-control" type="text" id="name" [(ngModel)]="name" name="_name" placeholder="Entrez un nom" /><br>
+    
+            <input type="file" id="img" name="_img" [(ngModel)]="img" /><br>
+      
+            <select multiple class="form-control genres" >
+              <option *ngFor="let cur of genres" value={{cur.name}}>{{cur.name}}</option>
+            </select><br>
+     
+            <button class="btn btn-primary" (click)="addArtist()" type="submit">Ajouter</button>
+     
+    </div>
+    </div>
+    </div>
+  <div id="outlet">
     <router-outlet></router-outlet>
-</div>
 </div>
